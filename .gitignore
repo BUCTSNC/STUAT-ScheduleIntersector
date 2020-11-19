@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+*.tlog
+.vs/Schudule_Intersector/v15/Browse.VC.db
+.vs/Schudule_Intersector/v15/.suo
+*.ipch
+*.ilk
+Debug/Schudule_Intersector.log
+*.pdb
+*.idb
