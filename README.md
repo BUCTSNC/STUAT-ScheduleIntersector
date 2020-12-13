@@ -1,7 +1,15 @@
-# Schudule_Intersector
+# STUAT_SchuduleIntersector
 A Schudule for student organization to intersect the time of members
 
-## 用途
+## 简介
+
+STUAT，您可以理解为StudentActivitiesTools或StudentAffairTools，意味学生活动辅助工具。
+
+STUAT是北化学生网络中心开发的一套用于方便学生组织开展活动筹划和精细化管理的工作套件，无需编程基础便可开箱即用。要查看更多的STUAT组件，您可以点击这里[查看STUAT项目](https://github.com/BUCTSNC/STUAT)。
+
+本组件可以用于寻找多个同学课表之间重合的空闲时间，以最好的安排活动。
+
+## 应用场景
 
 学生组织一般都有很多来自不同学院不同专业的不同年纪的学生吧
 
@@ -26,3 +34,11 @@ A Schudule for student organization to intersect the time of members
 其次，使用什么数据库呢？mysql？还是sqlite？需不需要做嵌入式处理还是维护一套DBMS？或者干脆使用非关系数据库？
 
 接下来是我们逐层剖析的结论。
+
+## 支持与维护
+
+本项目隶属北化学生网络中心开源社区贡献计划
+
+提案：系统维护部
+
+维护：系统维护部
