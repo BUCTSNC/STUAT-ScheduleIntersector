@@ -9,6 +9,7 @@
 //#include <sqlite.h>
 #include <graphics.h>
 #include <conio.h>
+#include <Windows.h>
 using namespace std;
 
 #define WINDOW_W 1500
@@ -40,7 +41,7 @@ public:
 	int FLAG_VISIABLE = 0;
 	//OPTIONAL
 	COLOR16 BUTTON_COLOR;
-	TCHAR BUTTON_TEXT;
+	TCHAR *BUTTON_TEXT;
 	//FUNCTION
 	BUTTON()
 	{
@@ -71,7 +72,7 @@ public:
 	{
 		BUTTON_COLOR = COLOR;
 	}
-	void setBUTTON_TEXT(TCHAR TEXT)
+	void setBUTTON_TEXT(TCHAR *TEXT)
 	{
 		BUTTON_TEXT = TEXT;
 	}
@@ -79,11 +80,11 @@ public:
 	{
 		if (X >= BUTTON_L && X <= BUTTON_R && Y >= BUTTON_U && Y <= BUTTON_D)
 		{
-			return 0;
+			return 1;
 		}
 		else
 		{
-			return -1;
+			return 0;
 		}
 	}
 	void drawBUTTON(int mode=1)
@@ -162,7 +163,7 @@ void WindowMain(void)
 	int LOGO_D = LOGO_U + LOGO_SIZE;
 	rectangle(LOGO_L, LOGO_U, LOGO_R, LOGO_D);
 
-	//INIT FEATURE_BUTTON
+	//INIT BUTTON POS
 	int BUTTON_NUM = 5;
 	int DEFAULT_BUTTON_W = LOGO_SIZE;
 	int DEFAULT_BUTTON_H = CONTROL_EDGE_Y;
@@ -179,9 +180,14 @@ void WindowMain(void)
 		int TEMP_BUTTON_D = DEFAULT_BUTTON_U + (iterator_i + 1) * DEFAULT_BUTTON_H + iterator_i * DEFAULT_BUTTON_EDGE;
 		BUTTON_LIST[iterator_i].BUTTON_INIT(TEMP_BUTTON_L, TEMP_BUTTON_U, TEMP_BUTTON_R, TEMP_BUTTON_D);
 		BUTTON_LIST[iterator_i].FLAG_VISIABLE = 1;
+		//TCHAR DEFAULT_TEXT[] = { TEXT("SNC") };
+		//BUTTON_LIST[iterator_i].setBUTTON_TEXT(&DEFAULT_TEXT);
 	}
 
-	//DRAW FEATURE_BUTTON
+	//INIT BUTTON TEXT
+	//BUTTON_LIST[0].setBUTTON_TEXT("SNC");
+
+	//DRAW BUTTON
 	for (iterator_i = 0; iterator_i < BUTTON_NUM; ++iterator_i)
 	{
 		if (BUTTON_LIST[iterator_i].FLAG_VISIABLE == 1)
@@ -190,6 +196,32 @@ void WindowMain(void)
 		}
 	}
 
+	//MOUSE DETECTOR
+	MOUSEMSG STUAT;
+	while (1)
+	{
+		STUAT = GetMouseMsg();
+		switch (STUAT.uMsg)
+		{
+			case WM_LBUTTONDOWN:
+			{
+				if (STUAT.x >= LOGO_L && STUAT.x <= LOGO_R && STUAT.y >= LOGO_U && STUAT.y <= LOGO_D)
+				{
+					cout << "[STUAT] LOGO" << endl;
+				}
+				else 
+				{
+					for (iterator_i = 0; iterator_i < BUTTON_NUM; ++iterator_i)
+					{
+						if (BUTTON_LIST[iterator_i].FLAG_VISIABLE == 1 && BUTTON_LIST[iterator_i].isBUTTON_IN(STUAT.x, STUAT.y))
+						{
+							cout << "[STUAT] BUTTON " << iterator_i + 1 << " is pressed." << endl;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 int main()
