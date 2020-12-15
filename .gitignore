@@ -2,4 +2,5 @@
 x64
 .vs/STUAT_SchuduleIntersector/v15/Browse.VC.db
 *.suo
+*.ipch
 .vs/STUAT_SchuduleIntersector/v15/.suo
