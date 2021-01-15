@@ -1,6 +1,8 @@
 # STUAT_SchuduleIntersector
 A Schudule for student organization to intersect the time of members
 
+# 敢于攻关，敢于创新，敢于领先。北化学生网络中心人人都是高手！
+
 ## 简介
 
 STUAT，您可以理解为StudentActivitiesTools或StudentAffairTools，意味学生活动辅助工具。
