@@ -56,5 +56,8 @@
     <ClInclude Include="Hpp\Class\BUTTON.hpp">
       <Filter>Hpp\Class</Filter>
     </ClInclude>
+    <ClInclude Include="Hpp\Basic\VARIABLE.hpp">
+      <Filter>Hpp\Basic</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

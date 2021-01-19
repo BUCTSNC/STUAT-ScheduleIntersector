@@ -12,6 +12,7 @@
 #include <Windows.h>
 
 #include "../Hpp/Basic/MACRO.hpp"
+//#include "../Hpp/Basic/VARIABLE.hpp"
 #include "../Hpp/Class/BLOCK.hpp"
 #include "../Hpp/Class/BUTTON.hpp"
 #include "../Hpp/Function/INIT_FUNC.hpp"
@@ -21,14 +22,14 @@ using namespace std;
 int FLAG_SCHEDULE_LOADED = 0;
 int FLAG_WINDOWMAIN_SHOWING = 0;
 
+int iterator_i = 0;
+int iterator_j = 0;
+
 int TABLE_EDGE_X = 30;
 int TABLE_EDGE_Y = 30;
 
 int CONTROL_EDGE_X = 30;
 int CONTROL_EDGE_Y = 30;
-
-int iterator_i = 0;
-int iterator_j = 0;
 
 //To make control panal is shared by every window
 BUTTON BUTTON_LIST[8];
@@ -42,15 +43,6 @@ void DRAW_CENTERBOX(int *CENTERBOX_L, int *CENTERBOX_U, int *CENTERBOX_R, int *C
 	*CENTERBOX_R = (0.5 + 0.3)*TABLEAREA_R;
 	*CENTERBOX_D = (0.5 + 0.3)*WINDOW_H;
 	rectangle(*CENTERBOX_L, *CENTERBOX_U, *CENTERBOX_R, *CENTERBOX_D);
-}
-
-void INIT_DIVISION_LINE(void)
-{
-	int DIVISIONLINE_L = TABLE_EDGE_X * 2 + BLOCK_W * NUM_DAY + 10;//1295
-	int DIVISIONLINE_U = TABLE_EDGE_X;//30
-	int DIVISIONLINE_R = TABLE_EDGE_X * 2 + BLOCK_W * NUM_DAY + 10 + 1;//1296
-	int DIVISIONLINE_D = WINDOW_H - TABLE_EDGE_X;//1470
-	rectangle(DIVISIONLINE_L, DIVISIONLINE_U, DIVISIONLINE_R, DIVISIONLINE_D);
 }
 
 void FUNC1(void)
