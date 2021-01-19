@@ -10,6 +10,10 @@
 #include <graphics.h>
 #include <conio.h>
 #include <Windows.h>
+
+#include "BLOCK.h"
+#include "BUTTON.h"
+
 using namespace std;
 
 #define WINDOW_W 1500
@@ -39,120 +43,6 @@ int CONTROL_EDGE_Y = 30;
 
 int iterator_i = 0;
 int iterator_j = 0;
-
-class BLOCK
-{
-public:
-	//VITAL
-	int BLOCK_L;
-	int BLOCK_U;
-	int BLOCK_R;
-	int BLOCK_D;
-	//OPTIONAL
-	int DEFAULT_BLOCK_W = BLOCK_W;
-	int DEFAULT_BLOCK_H = BLOCK_H;
-	COLORREF BLOCK_COLOR;
-	//FUNCTION
-	BLOCK()
-	{
-		BLOCK_INIT(0, 0, 1, 1);
-	}
-	BLOCK(int L, int U, int R, int D)
-	{
-		BLOCK_INIT(L, U, R, D);
-	}
-	void BLOCK_INIT(int L, int U, int R, int D)
-	{
-		BLOCK_L = L;
-		BLOCK_U = U;
-		BLOCK_R = R;
-		BLOCK_D = D;
-	}
-	void drawBLOCK(int mode = 1, COLORREF COLOR = RED)
-	{
-		if (mode)
-		{
-			rectangle(BLOCK_L, BLOCK_U, BLOCK_R, BLOCK_D);
-		}
-		else
-		{
-			setfillcolor(COLOR);
-			solidrectangle(BLOCK_L, BLOCK_U, BLOCK_R, BLOCK_D);
-		}
-	}
-};
-
-class BUTTON
-{
-public:
-	//VITAL
-	int BUTTON_W;
-	int BUTTON_H;
-	int BUTTON_L;
-	int BUTTON_U;
-	int BUTTON_R;
-	int BUTTON_D;
-	int FLAG_VISIABLE = 0;
-	//OPTIONAL
-	COLORREF BUTTON_COLOR;
-	TCHAR *BUTTON_TEXT;
-	//FUNCTION
-	BUTTON()
-	{
-		BUTTON_INIT(0, 0, 1, 1);
-	}
-	BUTTON(int L, int U, int R, int D)
-	{
-		BUTTON_INIT(L, U, R, D);
-	}
-	void BUTTON_INIT(int L, int U, int R, int D)
-	{
-		BUTTON_L = L;
-		BUTTON_U = U;
-		BUTTON_R = R;
-		BUTTON_D = D;
-		BUTTON_W = BUTTON_R - BUTTON_L;
-		BUTTON_H = BUTTON_D - BUTTON_U;
-	}
-	void setBUTTON(int W, int H)
-	{
-		BUTTON_W = W;
-		BUTTON_H = H;
-		//Keep the upper left corner static.
-		BUTTON_R = BUTTON_L + BUTTON_W;
-		BUTTON_D = BUTTON_U + BUTTON_H;
-	}
-	void setBUTTON_COLOR(COLORREF COLOR)
-	{
-		BUTTON_COLOR = COLOR;
-	}
-	void setBUTTON_TEXT(TCHAR *TEXT)
-	{
-		BUTTON_TEXT = TEXT;
-	}
-	int isBUTTON_IN(int X, int Y)
-	{
-		if (X >= BUTTON_L && X <= BUTTON_R && Y >= BUTTON_U && Y <= BUTTON_D)
-		{
-			return 1;
-		}
-		else
-		{
-			return 0;
-		}
-	}
-	void drawBUTTON(int mode=1)
-	{
-		if (mode)
-		{
-			rectangle(BUTTON_L, BUTTON_U, BUTTON_R, BUTTON_D);
-		}
-		else
-		{
-			solidrectangle(BUTTON_L, BUTTON_U, BUTTON_R, BUTTON_D);
-		}
-	}
-};
 
 //To make control panal is shared by every window
 BUTTON BUTTON_LIST[8];

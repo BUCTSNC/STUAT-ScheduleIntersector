@@ -21,6 +21,10 @@
   <ItemGroup>
     <ClCompile Include="STUAT_SchuduleIntersector.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BLOCK.h" />
+    <ClInclude Include="BUTTON.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{E9A435A3-2DA7-469C-A05F-97DA0BF0DD3F}</ProjectGuid>
