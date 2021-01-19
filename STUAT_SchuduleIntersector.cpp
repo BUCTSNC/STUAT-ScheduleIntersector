@@ -13,24 +13,11 @@
 
 #include "BLOCK.h"
 #include "BUTTON.h"
+#include "MACRO.h"
+
+#include "INIT_FUNC.h"
 
 using namespace std;
-
-#define WINDOW_W 1500
-#define WINDOW_H 780
-
-#define BLOCK_W 175
-#define BLOCK_H 55
-
-#define NUM_DAY_WORKDAY 5
-#define NUM_DAY_WEEKEND 2
-
-#define NUM_CLASS_MORN 5
-#define NUM_CLASS_NOON 5
-#define NUM_CLASS_DUSK 3
-
-#define NUM_DAY (NUM_DAY_WORKDAY+NUM_DAY_WEEKEND)
-#define NUM_CLASS (NUM_CLASS_MORN+NUM_CLASS_NOON+NUM_CLASS_DUSK)
 
 int FLAG_SCHEDULE_LOADED = 0;
 int FLAG_WINDOWMAIN_SHOWING = 0;
@@ -58,26 +45,6 @@ void DRAW_CENTERBOX(int *CENTERBOX_L, int *CENTERBOX_U, int *CENTERBOX_R, int *C
 	rectangle(*CENTERBOX_L, *CENTERBOX_U, *CENTERBOX_R, *CENTERBOX_D);
 }
 
-void INIT_TABLEAREA(void)
-{
-	setfillcolor(DARKGRAY);
-	int TABLEAREA_L = 0;
-	int TABLEAREA_U = 0;
-	int TABLEAREA_R = 1295;
-	int TABLEAREA_D = WINDOW_H;
-	solidrectangle(TABLEAREA_L, TABLEAREA_U, TABLEAREA_R, TABLEAREA_D);
-}
-
-void INIT_CONTROLAREA(void)
-{
-	setfillcolor(LIGHTGRAY);
-	int CONTROLAREA_L = 1296;
-	int CONTROLAREA_U = 0;
-	int CONTROLAREA_R = WINDOW_W;
-	int CONTROLAREA_D = WINDOW_H;
-	solidrectangle(CONTROLAREA_L, CONTROLAREA_U, CONTROLAREA_R, CONTROLAREA_D);
-}
-
 void INIT_DIVISION_LINE(void)
 {
 	int DIVISIONLINE_L = TABLE_EDGE_X * 2 + BLOCK_W * NUM_DAY + 10;//1295
@@ -91,7 +58,9 @@ void FUNC1(void)
 {
 	cout << "[FUNC1]" << endl;
 	FLAG_WINDOWMAIN_SHOWING = 0;
+	//extern void INIT_TABLEAREA(void);
 	INIT_TABLEAREA();
+	//extern void INIT_DIVISION_LINE(void);
 	INIT_DIVISION_LINE();
 	//
 	int CENTERBOX_L = 0;
@@ -156,6 +125,9 @@ void FUNC8(void)
 void WINDOW_MAIN(void)
 {
 	FLAG_WINDOWMAIN_SHOWING = 1;
+
+	//extern void INIT_TABLEAREA(void);
+	//extern void INIT_CONTROLAREA(void);
 
 	//----INIT----
 

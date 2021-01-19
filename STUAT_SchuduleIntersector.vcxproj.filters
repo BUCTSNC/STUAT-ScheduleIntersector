@@ -18,12 +18,21 @@
     <ClCompile Include="STUAT_SchuduleIntersector.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="INIT_FUNC.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BLOCK.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="BUTTON.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MACRO.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="INIT_FUNC.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

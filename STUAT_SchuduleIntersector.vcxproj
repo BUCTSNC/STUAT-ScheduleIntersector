@@ -19,11 +19,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="INIT_FUNC.cpp" />
     <ClCompile Include="STUAT_SchuduleIntersector.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BLOCK.h" />
     <ClInclude Include="BUTTON.h" />
+    <ClInclude Include="INIT_FUNC.h" />
+    <ClInclude Include="MACRO.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

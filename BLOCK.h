@@ -1,3 +1,5 @@
+#include "MACRO.h"
+
 #pragma once
 
 class BLOCK
