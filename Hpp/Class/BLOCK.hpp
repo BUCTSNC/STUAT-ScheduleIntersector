@@ -1,4 +1,6 @@
-#include "MACRO.h"
+#include <graphics.h>
+#include <conio.h>
+#include "../Basic/MACRO.hpp"
 
 #pragma once
 
@@ -15,14 +17,8 @@ public:
 	int DEFAULT_BLOCK_H = BLOCK_H;
 	COLORREF BLOCK_COLOR;
 	//FUNCTION
-	BLOCK()
-	{
-		BLOCK_INIT(0, 0, 1, 1);
-	}
-	BLOCK(int L, int U, int R, int D)
-	{
-		BLOCK_INIT(L, U, R, D);
-	}
+	BLOCK();
+	BLOCK(int L, int U, int R, int D);
 	void BLOCK_INIT(int L, int U, int R, int D)
 	{
 		BLOCK_L = L;

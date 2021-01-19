@@ -2,9 +2,9 @@
 #include <graphics.h>
 #include <conio.h>
 
-#include "BLOCK.h"
-#include "BUTTON.h"
-#include "MACRO.h"
+#include "../../Hpp/Basic/MACRO.hpp"
+#include "../../Hpp/Class/BLOCK.hpp"
+#include "../../Hpp/Class/BUTTON.hpp"
 
 #pragma once
 

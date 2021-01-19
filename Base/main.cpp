@@ -1,4 +1,4 @@
-﻿//STUAT_SchuduleIntersector.cpp
+﻿//main.cpp
 //STUAT
 //
 //Created by LaoshuBaby on 2020/11/19
@@ -11,11 +11,10 @@
 #include <conio.h>
 #include <Windows.h>
 
-#include "BLOCK.h"
-#include "BUTTON.h"
-#include "MACRO.h"
-
-#include "INIT_FUNC.h"
+#include "../Hpp/Basic/MACRO.hpp"
+#include "../Hpp/Class/BLOCK.hpp"
+#include "../Hpp/Class/BUTTON.hpp"
+#include "../Hpp/Function/INIT_FUNC.hpp"
 
 using namespace std;
 
@@ -58,9 +57,7 @@ void FUNC1(void)
 {
 	cout << "[FUNC1]" << endl;
 	FLAG_WINDOWMAIN_SHOWING = 0;
-	//extern void INIT_TABLEAREA(void);
 	INIT_TABLEAREA();
-	//extern void INIT_DIVISION_LINE(void);
 	INIT_DIVISION_LINE();
 	//
 	int CENTERBOX_L = 0;
@@ -125,9 +122,6 @@ void FUNC8(void)
 void WINDOW_MAIN(void)
 {
 	FLAG_WINDOWMAIN_SHOWING = 1;
-
-	//extern void INIT_TABLEAREA(void);
-	//extern void INIT_CONTROLAREA(void);
 
 	//----INIT----
 

@@ -1,4 +1,6 @@
-#include "MACRO.h"
+#include <graphics.h>
+#include <conio.h>
+#include "../Basic/MACRO.hpp"
 
 #pragma once
 
@@ -17,14 +19,8 @@ public:
 	COLORREF BUTTON_COLOR;
 	TCHAR *BUTTON_TEXT;
 	//FUNCTION
-	BUTTON()
-	{
-		BUTTON_INIT(0, 0, 1, 1);
-	}
-	BUTTON(int L, int U, int R, int D)
-	{
-		BUTTON_INIT(L, U, R, D);
-	}
+	BUTTON();
+	BUTTON(int L, int U, int R, int D);
 	void BUTTON_INIT(int L, int U, int R, int D)
 	{
 		BUTTON_L = L;
