@@ -11,7 +11,7 @@
         NUM_DAY_WEEKEND
       </NUM_DAY_WEEKEND>
     </NUM_DAY>
-    <NUM_CLASS>!
+    <NUM_CLASS>
       <NUM_CLASS_MORN>
         NUM_CLASS_MORN
       </NUM_CLASS_MORN>
@@ -47,6 +47,9 @@
         <LOCATION>
           CLASS_LOCATION
         </LOCATION>
+        <TYPE>
+          DEFAULT/SELF/INTERNET/UNDEFINED
+        </TYPE>
       </VITAL>
       <OPTIONAL>
         <TEACHER>
