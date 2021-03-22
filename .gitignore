@@ -360,3 +360,8 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Pugixml
+*pugiconfig.hpp
+*pugixml.cpp
+*pugixml.hpp

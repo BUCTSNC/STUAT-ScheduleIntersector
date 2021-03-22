@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<STUAT>
+  <HEAD>
+    <!--YOU CAN REFER TO MACRO.hpp-->
+    <NUM_DAY>
+      <NUM_DAY_WORKDAY>
+        NUM_DAY_WORKDAY
+      </NUM_DAY_WORKDAY>
+      <NUM_DAY_WEEKEND>
+        NUM_DAY_WEEKEND
+      </NUM_DAY_WEEKEND>
+    </NUM_DAY>
+    <NUM_CLASS>
+      <NUM_CLASS_MORN>
+        NUM_CLASS_MORN
+      </NUM_CLASS_MORN>
+      <NUM_CLASS_NOON>
+        NUM_CLASS_NOON
+      </NUM_CLASS_NOON>
+      <NUM_CLASS_DUSK>
+        NUM_CLASS_DUSK
+      </NUM_CLASS_DUSK>
+    </NUM_CLASS>
+    <!--THOSE IS OPTIONAL-->
+    <EXTRA>
+      <UNIVERSITY>
+        NAME
+      </UNIVERSITY>
+      <COLLEGE>
+        COLLEGE
+      </COLLEGE>
+      <MAJOR>
+        MAJOR
+      </MAJOR>
+      <CLASS>
+        0001
+      </CLASS>
+    </EXTRA>
+  </HEAD>
+  <BODY>
+    <CLASS NUM_DAY="1~(WORKDAY+WEEKEND)" NUM_CLASS="1~(MORN+NOON+DUSK)" NUM_WEEK="1~WEEK_MAX">
+      <VITAL>
+        <NAME>
+          CLASS_NAME
+        </NAME>
+        <LOCATION>
+          CLASS_LOCATION
+        </LOCATION>
+        <TYPE>
+          DEFAULT/SELF/INTERNET/UNDEFINED
+        </TYPE>
+      </VITAL>
+      <OPTIONAL>
+        <TEACHER>
+          CLASS_TEACHER
+        </TEACHER>
+        <OTHER>
+          WAITING FOR ADDTION
+        </OTHER>
+      </OPTIONAL>
+    </CLASS>
+  </BODY>
+</STUAT>
