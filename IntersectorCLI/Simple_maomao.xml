@@ -208,6 +208,32 @@
         </TYPE>
       </VITAL>
     </CLASS>
+    <CLASS NUM_DAY="3" NUM_CLASS="11~13" NUM_WEEK="9~16">
+      <VITAL>
+        <NAME>
+          数值计算方法[01]
+        </NAME>
+        <LOCATION>
+          理教楼208
+        </LOCATION>
+        <TYPE>
+          DEFAULT
+        </TYPE>
+      </VITAL>
+    </CLASS>
+    <CLASS NUM_DAY="3" NUM_CLASS="11~13" NUM_WEEK="2~12">
+      <VITAL>
+        <NAME>
+          机器学习理论和实践[01]
+        </NAME>
+        <LOCATION>
+          综教A305
+        </LOCATION>
+        <TYPE>
+          DEFAULT
+        </TYPE>
+      </VITAL>
+    </CLASS>
     <CLASS NUM_DAY="4" NUM_CLASS="1~2" NUM_WEEK="1~14">
       <VITAL>
         <NAME>
@@ -254,6 +280,58 @@
         </NAME>
         <LOCATION>
           理教楼305
+        </LOCATION>
+        <TYPE>
+          DEFAULT
+        </TYPE>
+      </VITAL>
+    </CLASS>
+    <CLASS NUM_DAY="5" NUM_CLASS="1~2" NUM_WEEK="1~8">
+      <VITAL>
+        <NAME>
+          网络与通信[01]
+        </NAME>
+        <LOCATION>
+          理教楼202
+        </LOCATION>
+        <TYPE>
+          DEFAULT
+        </TYPE>
+      </VITAL>
+    </CLASS>
+    <CLASS NUM_DAY="5" NUM_CLASS="3~5" NUM_WEEK="1~8">
+      <VITAL>
+        <NAME>
+          面向对象技术与方法[05]
+        </NAME>
+        <LOCATION>
+          理教楼301
+        </LOCATION>
+        <TYPE>
+          DEFAULT
+        </TYPE>
+      </VITAL>
+    </CLASS>
+    <CLASS NUM_DAY="5" NUM_CLASS="8~9" NUM_WEEK="1~14">
+      <VITAL>
+        <NAME>
+          数字逻辑[02]
+        </NAME>
+        <LOCATION>
+          理教楼104
+        </LOCATION>
+        <TYPE>
+          DEFAULT
+        </TYPE>
+      </VITAL>
+    </CLASS>
+    <CLASS NUM_DAY="5" NUM_CLASS="11~13" NUM_WEEK="9~16">
+      <VITAL>
+        <NAME>
+          数值计算方法[01]
+        </NAME>
+        <LOCATION>
+          理教楼203
         </LOCATION>
         <TYPE>
           DEFAULT
