@@ -19,26 +19,34 @@ int main(void)
 
 	pugi::xml_document STUAT;
 	pugi::xml_parse_result result = STUAT.load_file("Simple_maomao.xml");
-	string NUM_DAY_WORKDAY = FormatString(STUAT.select_single_node("/STUAT/HEAD/NUM_DAY/NUM_DAY_WORKDAY/text()").node().value());
-	string NUM_DAY_WEEKEND = FormatString(STUAT.select_single_node("/STUAT/HEAD/NUM_DAY/NUM_DAY_WEEKEND/text()").node().value());
-	string NUM_CLASS_MORN = FormatString(STUAT.select_single_node("/STUAT/HEAD/NUM_CLASS/NUM_CLASS_MORN/text()").node().value());
-	string NUM_CLASS_NOON = FormatString(STUAT.select_single_node("/STUAT/HEAD/NUM_CLASS/NUM_CLASS_NOON/text()").node().value());
-	string NUM_CLASS_DUSK = FormatString(STUAT.select_single_node("/STUAT/HEAD/NUM_CLASS/NUM_CLASS_DUSK/text()").node().value());
+	std::cout << "Load result: " << result.description() << ", mesh name: " << STUAT.child("mesh").attribute("name").value() << std::endl;
+
+	string NUM_DAY_WORKDAY;// = FormatString(STUAT.select_single_node("/STUAT/HEAD/NUM_DAY/NUM_DAY_WORKDAY/text()").node().value());
+	string NUM_DAY_WEEKEND;// = FormatString(STUAT.select_single_node("/STUAT/HEAD/NUM_DAY/NUM_DAY_WEEKEND/text()").node().value());
+	string NUM_CLASS_MORN;// = FormatString(STUAT.select_single_node("/STUAT/HEAD/NUM_CLASS/NUM_CLASS_MORN/text()").node().value());
+	string NUM_CLASS_NOON;// = FormatString(STUAT.select_single_node("/STUAT/HEAD/NUM_CLASS/NUM_CLASS_NOON/text()").node().value());
+	string NUM_CLASS_DUSK;// = FormatString(STUAT.select_single_node("/STUAT/HEAD/NUM_CLASS/NUM_CLASS_DUSK/text()").node().value());
 	stringstream str2digit;
-	int INT_NUM_DAY_WORKDAY;;
-	int INT_NUM_DAY_WEEKEND;;
-	int INT_NUM_CLASS_MORN;;
-	int INT_NUM_CLASS_NOON;;
-	int INT_NUM_CLASS_DUSK;;
+	int INT_NUM_DAY_WORKDAY;
+	int INT_NUM_DAY_WEEKEND;
+	int INT_NUM_CLASS_MORN;
+	int INT_NUM_CLASS_NOON;
+	int INT_NUM_CLASS_DUSK;
 	str2digit << NUM_DAY_WORKDAY; str2digit >> INT_NUM_DAY_WORKDAY; str2digit.clear();
-	
-	int NUM_DAY = INT_NUM_DAY_WORKDAY;
-	string ver = FormatString(STUAT.select_single_node("/unigal-script/head/ver/text()").node().value());
-	cout << "[NUM_DAY_WORKDAY=" << NUM_DAY_WORKDAY << "]" << endl;
-	cout << "[NUM_DAY_WEEKEND=" << NUM_DAY_WEEKEND << "]" << endl;
-	cout << "[NUM_CLASS_MORN=" << NUM_CLASS_MORN << "]" << endl;
-	cout << "[NUM_CLASS_NOON=" << NUM_CLASS_NOON << "]" << endl;
-	cout << "[NUM_CLASS_DUSK=" << NUM_CLASS_DUSK << "]" << endl;
+	str2digit << NUM_DAY_WORKDAY; str2digit >> INT_NUM_DAY_WEEKEND; str2digit.clear();
+	str2digit << NUM_DAY_WORKDAY; str2digit >> INT_NUM_CLASS_MORN; str2digit.clear();
+	str2digit << NUM_DAY_WORKDAY; str2digit >> INT_NUM_CLASS_NOON; str2digit.clear();
+	str2digit << NUM_DAY_WORKDAY; str2digit >> INT_NUM_CLASS_DUSK; str2digit.clear();
+	int NUM_DAY = INT_NUM_DAY_WORKDAY+ INT_NUM_DAY_WEEKEND;
+	int NUM_CLASS = INT_NUM_CLASS_MORN + INT_NUM_CLASS_NOON + INT_NUM_CLASS_DUSK;
+	cout << "[NUM_DAY_WORKDAY=" << INT_NUM_DAY_WORKDAY << "]" << endl;
+	cout << "[NUM_DAY_WEEKEND=" << INT_NUM_DAY_WEEKEND << "]" << endl;
+	cout << "[NUM_CLASS_MORN=" << INT_NUM_CLASS_MORN << "]" << endl;
+	cout << "[NUM_CLASS_NOON=" << INT_NUM_CLASS_NOON << "]" << endl;
+	cout << "[NUM_CLASS_DUSK=" << INT_NUM_CLASS_DUSK << "]" << endl;
+	cout << "[NUM_DAY=" << NUM_DAY << "]" << endl;
+	cout << "[NUM_CLASS=" << NUM_CLASS << "]" << endl;
+	/*
 	cout << "开始解析脚本，若需要编译成目标语言则输入1，不需要编译成目标语言则输入0" << endl;
 	int flag_complier = 0;
 	cin >> flag_complier;
@@ -183,5 +191,6 @@ int main(void)
 			}
 		}
 	}
+	*/
 	return 0;
 }
