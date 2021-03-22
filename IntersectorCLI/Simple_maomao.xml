@@ -5,60 +5,104 @@
     <!--YOU CAN REFER TO MACRO.hpp-->
     <NUM_DAY>
       <NUM_DAY_WORKDAY>
-        NUM_DAY_WORKDAY
+        5
       </NUM_DAY_WORKDAY>
       <NUM_DAY_WEEKEND>
-        NUM_DAY_WEEKEND
+        2
       </NUM_DAY_WEEKEND>
     </NUM_DAY>
     <NUM_CLASS>
       <NUM_CLASS_MORN>
-        NUM_CLASS_MORN
+        5
       </NUM_CLASS_MORN>
       <NUM_CLASS_NOON>
-        NUM_CLASS_NOON
+        5
       </NUM_CLASS_NOON>
       <NUM_CLASS_DUSK>
-        NUM_CLASS_DUSK
+        3
       </NUM_CLASS_DUSK>
     </NUM_CLASS>
     <!--THOSE IS OPTIONAL-->
     <EXTRA>
       <UNIVERSITY>
-        NAME
+        BIT
       </UNIVERSITY>
       <COLLEGE>
-        COLLEGE
+        XUTELI
       </COLLEGE>
       <MAJOR>
-        MAJOR
+        COMPUTER SCIENCE
       </MAJOR>
       <CLASS>
-        0001
+        maomao
       </CLASS>
     </EXTRA>
   </HEAD>
   <BODY>
-    <CLASS NUM_DAY="1~(WORKDAY+WEEKEND)" NUM_CLASS="1~(MORN+NOON+DUSK)" NUM_WEEK="1~WEEK_MAX">
+    <CLASS NUM_DAY="1" NUM_CLASS="3~4" NUM_WEEK="1~16">
       <VITAL>
         <NAME>
-          CLASS_NAME
+          学术用途英语四级[03]
         </NAME>
         <LOCATION>
-          CLASS_LOCATION
+          理教楼206
         </LOCATION>
         <TYPE>
-          DEFAULT/SELF/INTERNET/UNDEFINED
+          DEFAULT
         </TYPE>
       </VITAL>
-      <OPTIONAL>
-        <TEACHER>
-          CLASS_TEACHER
-        </TEACHER>
-        <OTHER>
-          WAITING FOR ADDTION
-        </OTHER>
-      </OPTIONAL>
+    </CLASS>
+    <CLASS NUM_DAY="1" NUM_CLASS="11~13" NUM_WEEK="7~12">
+      <VITAL>
+        <NAME>
+          电路与电子线路实验（I）[02]
+        </NAME>
+        <LOCATION>
+          工训楼502
+        </LOCATION>
+        <TYPE>
+          DEFAULT
+        </TYPE>
+      </VITAL>
+    </CLASS>
+    <CLASS NUM_DAY="2" NUM_CLASS="1~2" NUM_WEEK="1~8">
+      <VITAL>
+        <NAME>
+          面向对象技术与方法[05]
+        </NAME>
+        <LOCATION>
+          理教楼301
+        </LOCATION>
+        <TYPE>
+          DEFAULT
+        </TYPE>
+      </VITAL>
+    </CLASS>
+    <CLASS NUM_DAY="2" NUM_CLASS="3~5" NUM_WEEK="1~16">
+      <VITAL>
+        <NAME>
+          数据库原理与设计[01]
+        </NAME>
+        <LOCATION>
+          理教楼407
+        </LOCATION>
+        <TYPE>
+          DEFAULT
+        </TYPE>
+      </VITAL>
+    </CLASS>
+    <CLASS NUM_DAY="2" NUM_CLASS="6~7" NUM_WEEK="1~16">
+      <VITAL>
+        <NAME>
+          体育/八段锦[06]
+        </NAME>
+        <LOCATION>
+          良乡图书馆地下一层102A
+        </LOCATION>
+        <TYPE>
+          DEFAULT
+        </TYPE>
+      </VITAL>
     </CLASS>
   </BODY>
 </STUAT>
