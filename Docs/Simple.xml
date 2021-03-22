@@ -1,10 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <STUAT>
-  <Head>
+  <HEAD>
+    <!--YOU CAN REFER TO MACRO.hpp-->
+    <NUM_DAY>
+      <NUM_DAY_WORKDAY>
+        NUM_DAY_WORKDAY
+      </NUM_DAY_WORKDAY>
+      <NUM_DAY_WEEKEND>
+        NUM_DAY_WEEKEND
+      </NUM_DAY_WEEKEND>
+    </NUM_DAY>
+    <NUM_CLASS>
+      <NUM_CLASS_MORN>
+        NUM_CLASS_MORN
+      </NUM_CLASS_MORN>
+      <NUM_CLASS_NOON>
+        NUM_CLASS_NOON
+      </NUM_CLASS_NOON>
+      <NUM_CLASS_DUSK>
+        NUM_CLASS_DUSK
+      </NUM_CLASS_DUSK>
+    </NUM_CLASS>
+    <!--THOSE IS OPTIONAL-->
+    <EXTRA>
+      <UNIVERSITY>
+        NAME
+      </UNIVERSITY>
+      <COLLEGE>
+        COLLEGE
+      </COLLEGE>
+      <MAJOR>
+        MAJOR
+      </MAJOR>
+      <CLASS>
+        0001
+      </CLASS>
+    </EXTRA>
+  </HEAD>
+  <BODY>
     
-  </Head>
-  <Body>
-    
-  </Body>
+  </BODY>
 </STUAT>
