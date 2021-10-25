@@ -21,7 +21,3 @@
 故，这部分的实现方式和UniGal-Complier、UniGal-Render有异曲同工之妙
 
 反正都是我用XML造的轮子，不差这一个
-
-
-
-此外，OpenPlaid将会考虑更换SDL图形库，不过出于教学目的，STUAT就保留EasyX了

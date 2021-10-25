@@ -2,7 +2,7 @@
 //STUAT
 //
 //Created by LaoshuBaby on 2020/11/19
-//Copyleft © 2020 Student Network Center Of BUCT. All right NOT reserved.
+//Copyleft © 2020-2021 Student Network Center Of BUCT. All right NOT reserved.
 //
 
 #include <iostream>
@@ -11,11 +11,11 @@
 #include <conio.h>
 #include <Windows.h>
 
-#include "../Hpp/Basic/MACRO.hpp"
-//#include "../Hpp/Basic/VARIABLE.hpp"
-#include "../Hpp/Class/BLOCK.hpp"
-#include "../Hpp/Class/BUTTON.hpp"
-#include "../Hpp/Function/INIT_FUNC.hpp"
+#include "Hpp/Basic/MACRO.hpp"
+//#include "Hpp/Basic/VARIABLE.hpp"
+#include "Hpp/Class/BLOCK.hpp"
+#include "Hpp/Class/BUTTON.hpp"
+#include "Hpp/Function/INIT_FUNC.hpp"
 
 using namespace std;
 
