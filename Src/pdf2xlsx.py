@@ -1,3 +1,11 @@
+# pdf2xlsx.py
+# STUAT
+# 
+# Created by xiexiaopeng2002 on 2021/10/22
+# Copyleft © 2021 Student Network Center Of BUCT. 
+# Licensed by GPL-3.0
+# 
+
 import camelot
 import re
 import os

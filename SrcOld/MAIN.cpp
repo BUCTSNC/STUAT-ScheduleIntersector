@@ -2,7 +2,8 @@
 //STUAT
 //
 //Created by LaoshuBaby on 2020/11/19
-//Copyleft © 2020-2021 Student Network Center Of BUCT. All right NOT reserved.
+//Copyleft © 2020-2021 Student Network Center Of BUCT. 
+//Licensed by GPL-3.0
 //
 
 #include <iostream>

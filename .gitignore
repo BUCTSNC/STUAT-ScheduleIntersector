@@ -3,6 +3,8 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+# 在后来我们提出C++版本后需要换成纯Py的
+
 # User-specific files
 *.rsuser
 *.suo
@@ -365,5 +367,7 @@ FodyWeavers.xsd
 *pugiconfig.hpp
 *pugixml.cpp
 *pugixml.hpp
+
+# Vscode
 .vscode/c_cpp_properties.json
 .vscode/settings.json
