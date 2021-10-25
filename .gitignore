@@ -365,3 +365,5 @@ FodyWeavers.xsd
 *pugiconfig.hpp
 *pugixml.cpp
 *pugixml.hpp
+.vscode/c_cpp_properties.json
+.vscode/settings.json
