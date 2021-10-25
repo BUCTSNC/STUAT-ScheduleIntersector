@@ -24,9 +24,8 @@
     <Filter Include="Hpp\Function">
       <UniqueIdentifier>{c3672d00-0c62-418b-a96b-3c695f4f9797}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Base">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="Cpp\Module">
+      <UniqueIdentifier>{e63cc471-fb1e-4bd6-aeb6-6e038180e80b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -39,9 +38,10 @@
     <ClCompile Include="Cpp\Function\INIT_FUNC.cpp">
       <Filter>Cpp\Function</Filter>
     </ClCompile>
-    <ClCompile Include="Base\main.cpp">
-      <Filter>Base</Filter>
+    <ClCompile Include="Cpp\Module\XML_PARSER.cpp">
+      <Filter>Cpp\Module</Filter>
     </ClCompile>
+    <ClCompile Include="MAIN.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Hpp\Function\INIT_FUNC.hpp">
@@ -59,5 +59,8 @@
     <ClInclude Include="Hpp\Basic\VARIABLE.hpp">
       <Filter>Hpp\Basic</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
   </ItemGroup>
 </Project>
