@@ -1,5 +1,5 @@
-# STUAT_SchuduleIntersector
-A Schudule for student organization to intersect the time of members
+# STUAT_ScheduleIntersector
+A Schedule for student organization to intersect the time of members
 
 ## 简介
 
