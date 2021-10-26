@@ -6,7 +6,7 @@
 # Licensed by GPL-3.0
 # 
 
-import camelot
+import camelot  # 安装camelot-py[cv]
 import re
 import os
 import json
