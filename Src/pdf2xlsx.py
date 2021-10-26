@@ -1,10 +1,10 @@
 # pdf2xlsx.py
 # STUAT
-# 
+#
 # Created by xiexiaopeng2002 on 2021/10/22
-# Copyleft © 2021 Student Network Center Of BUCT. 
+# Copyleft © 2021 Student Network Center Of BUCT.
 # Licensed by GPL-3.0
-# 
+#
 
 import camelot  # 安装camelot-py[cv]
 import re
@@ -173,3 +173,5 @@ if __name__ == "__main__":
         pdf_data = load_pdf(page_dict)
         # print(find_ones_xlsx())
         count = count + 1
+for file in glob.glob(r'*张表.xlsx'):
+    os.remove(file)
