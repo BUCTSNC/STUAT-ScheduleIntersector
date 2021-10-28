@@ -9,21 +9,25 @@
    <widget class="QWidget" name="gridLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>50</y>
-      <width>160</width>
-      <height>80</height>
+      <x>20</x>
+      <y>20</y>
+      <width>241</width>
+      <height>131</height>
      </rect>
     </property>
-    <layout class="QGridLayout" name="gridLayout"/>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QTextBrowser" name="TOPtextBrowser"/>
+     </item>
+    </layout>
    </widget>
    <widget class="QToolButton" name="toolButton">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>170</y>
-      <width>37</width>
-      <height>18</height>
+      <x>20</x>
+      <y>160</y>
+      <width>71</width>
+      <height>81</height>
      </rect>
     </property>
     <property name="text">
@@ -33,10 +37,10 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>220</y>
+      <x>100</x>
+      <y>160</y>
       <width>75</width>
-      <height>23</height>
+      <height>81</height>
      </rect>
     </property>
     <property name="text">
@@ -44,18 +48,25 @@
     </property>
    </widget>
   </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>307</width>
-     <height>22</height>
-    </rect>
-   </property>
-  </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>TOPtextBrowser</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>97</x>
+     <y>253</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>140</x>
+     <y>85</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
