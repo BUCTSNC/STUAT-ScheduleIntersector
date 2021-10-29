@@ -371,3 +371,5 @@ FodyWeavers.xsd
 # Vscode
 .vscode/c_cpp_properties.json
 .vscode/settings.json
+Src/STUAT-SI-GUI/.idea/STUAT-SI-GUI.iml
+Src/STUAT-SI-GUI/.idea/STUAT-SI-GUI.iml
