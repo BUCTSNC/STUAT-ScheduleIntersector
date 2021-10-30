@@ -3,8 +3,6 @@ A Schedule for student organization to intersect the time of members
 
 ## 简介
 
-！！！！！！！！
-
 STUAT，您可以理解为StudentActivitiesTools或StudentAffairTools，意味学生活动辅助工具。
 
 STUAT是北化学生网络中心开发的一套用于方便学生组织开展活动筹划和精细化管理的工作套件，无需编程基础便可开箱即用。要查看更多的STUAT组件，您可以点击这里[查看STUAT项目](https://github.com/BUCTSNC/STUAT)。
