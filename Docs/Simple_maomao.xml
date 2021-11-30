@@ -39,7 +39,7 @@
     </EXTRA>
   </HEAD>
   <BODY>
-    <CLASS NUM_DAY="1" NUM_CLASS="3~4" NUM_WEEK="1~16">
+    <LESSON NUM_DAY="1" NUM_CLASS="3~4" NUM_WEEK="1~16">
       <VITAL>
         <NAME>
           学术用途英语四级[03]
@@ -51,8 +51,8 @@
           DEFAULT
         </TYPE>
       </VITAL>
-    </CLASS>
-    <CLASS NUM_DAY="1" NUM_CLASS="11~13" NUM_WEEK="7~12">
+    </LESSON>
+    <LESSON NUM_DAY="1" NUM_CLASS="11~13" NUM_WEEK="7~12">
       <VITAL>
         <NAME>
           电路与电子线路实验（I）[02]
@@ -64,8 +64,8 @@
           DEFAULT
         </TYPE>
       </VITAL>
-    </CLASS>
-    <CLASS NUM_DAY="2" NUM_CLASS="1~2" NUM_WEEK="1~8">
+    </LESSON>
+    <LESSON NUM_DAY="2" NUM_CLASS="1~2" NUM_WEEK="1~8">
       <VITAL>
         <NAME>
           面向对象技术与方法[05]
@@ -77,8 +77,8 @@
           DEFAULT
         </TYPE>
       </VITAL>
-    </CLASS>
-    <CLASS NUM_DAY="2" NUM_CLASS="3~5" NUM_WEEK="1~16">
+    </LESSON>
+    <LESSON NUM_DAY="2" NUM_CLASS="3~5" NUM_WEEK="1~16">
       <VITAL>
         <NAME>
           数据库原理与设计[01]
@@ -90,8 +90,8 @@
           DEFAULT
         </TYPE>
       </VITAL>
-    </CLASS>
-    <CLASS NUM_DAY="2" NUM_CLASS="6~7" NUM_WEEK="1~16">
+    </LESSON>
+    <LESSON NUM_DAY="2" NUM_CLASS="6~7" NUM_WEEK="1~16">
       <VITAL>
         <NAME>
           体育/八段锦[06]
@@ -103,8 +103,8 @@
           DEFAULT
         </TYPE>
       </VITAL>
-    </CLASS>
-    <CLASS NUM_DAY="2" NUM_CLASS="8~10" NUM_WEEK="1~16">
+    </LESSON>
+    <LESSON NUM_DAY="2" NUM_CLASS="8~10" NUM_WEEK="1~16">
       <VITAL>
         <NAME>
           计算理论与算法分析设计[05]
@@ -116,8 +116,8 @@
           DEFAULT
         </TYPE>
       </VITAL>
-    </CLASS>
-    <CLASS NUM_DAY="2" NUM_CLASS="11~13" NUM_WEEK="1~1">
+    </LESSON>
+    <LESSON NUM_DAY="2" NUM_CLASS="11~13" NUM_WEEK="1~1">
       <VITAL>
         <NAME>
           形式与政策IV[25]
@@ -129,8 +129,8 @@
           DEFAULT
         </TYPE>
       </VITAL>
-    </CLASS>
-    <CLASS NUM_DAY="2" NUM_CLASS="11~13" NUM_WEEK="5~5">
+    </LESSON>
+    <LESSON NUM_DAY="2" NUM_CLASS="11~13" NUM_WEEK="5~5">
       <VITAL>
         <NAME>
           形式与政策IV[25]
@@ -142,8 +142,8 @@
           DEFAULT
         </TYPE>
       </VITAL>
-    </CLASS>
-    <CLASS NUM_DAY="2" NUM_CLASS="11~13" NUM_WEEK="9~9">
+    </LESSON>
+    <LESSON NUM_DAY="2" NUM_CLASS="11~13" NUM_WEEK="9~9">
       <VITAL>
         <NAME>
           形式与政策IV[25]
@@ -155,8 +155,8 @@
           DEFAULT
         </TYPE>
       </VITAL>
-    </CLASS>
-    <CLASS NUM_DAY="2" NUM_CLASS="11~13" NUM_WEEK="13~13">
+    </LESSON>
+    <LESSON NUM_DAY="2" NUM_CLASS="11~13" NUM_WEEK="13~13">
       <VITAL>
         <NAME>
           形式与政策IV[25]
@@ -168,8 +168,8 @@
           DEFAULT
         </TYPE>
       </VITAL>
-    </CLASS>
-    <CLASS NUM_DAY="3" NUM_CLASS="1~2" NUM_WEEK="1~8">
+    </LESSON>
+    <LESSON NUM_DAY="3" NUM_CLASS="1~2" NUM_WEEK="1~8">
       <VITAL>
         <NAME>
           网络与通信[01]
@@ -181,8 +181,8 @@
           DEFAULT
         </TYPE>
       </VITAL>
-    </CLASS>
-    <CLASS NUM_DAY="3" NUM_CLASS="3~5" NUM_WEEK="1~16">
+    </LESSON>
+    <LESSON NUM_DAY="3" NUM_CLASS="3~5" NUM_WEEK="1~16">
       <VITAL>
         <NAME>
           毛泽东思想和中国特色社会主义理论体系概论[10]
@@ -194,8 +194,8 @@
           DEFAULT
         </TYPE>
       </VITAL>
-    </CLASS>
-    <CLASS NUM_DAY="3" NUM_CLASS="8~10" NUM_WEEK="1~16">
+    </LESSON>
+    <LESSON NUM_DAY="3" NUM_CLASS="8~10" NUM_WEEK="1~16">
       <VITAL>
         <NAME>
           离散数学II[04]
@@ -207,8 +207,8 @@
           DEFAULT
         </TYPE>
       </VITAL>
-    </CLASS>
-    <CLASS NUM_DAY="3" NUM_CLASS="11~13" NUM_WEEK="9~16">
+    </LESSON>
+    <LESSON NUM_DAY="3" NUM_CLASS="11~13" NUM_WEEK="9~16">
       <VITAL>
         <NAME>
           数值计算方法[01]
@@ -220,8 +220,8 @@
           DEFAULT
         </TYPE>
       </VITAL>
-    </CLASS>
-    <CLASS NUM_DAY="3" NUM_CLASS="11~13" NUM_WEEK="2~12">
+    </LESSON>
+    <LESSON NUM_DAY="3" NUM_CLASS="11~13" NUM_WEEK="2~12">
       <VITAL>
         <NAME>
           机器学习理论和实践[01]
@@ -233,8 +233,8 @@
           DEFAULT
         </TYPE>
       </VITAL>
-    </CLASS>
-    <CLASS NUM_DAY="4" NUM_CLASS="1~2" NUM_WEEK="1~14">
+    </LESSON>
+    <LESSON NUM_DAY="4" NUM_CLASS="1~2" NUM_WEEK="1~14">
       <VITAL>
         <NAME>
           数字逻辑[02]
@@ -246,8 +246,8 @@
           DEFAULT
         </TYPE>
       </VITAL>
-    </CLASS>
-    <CLASS NUM_DAY="4" NUM_CLASS="1~2" NUM_WEEK="1~14">
+    </LESSON>
+    <LESSON NUM_DAY="4" NUM_CLASS="1~2" NUM_WEEK="1~14">
       <VITAL>
         <NAME>
           数字逻辑[02]
@@ -259,8 +259,8 @@
           DEFAULT
         </TYPE>
       </VITAL>
-    </CLASS>
-    <CLASS NUM_DAY="4" NUM_CLASS="8~9" NUM_WEEK="1~16">
+    </LESSON>
+    <LESSON NUM_DAY="4" NUM_CLASS="8~9" NUM_WEEK="1~16">
       <VITAL>
         <NAME>
           学术用途英语四级[03]
@@ -272,8 +272,8 @@
           DEFAULT
         </TYPE>
       </VITAL>
-    </CLASS>
-    <CLASS NUM_DAY="4" NUM_CLASS="11~13" NUM_WEEK="1~11">
+    </LESSON>
+    <LESSON NUM_DAY="4" NUM_CLASS="11~13" NUM_WEEK="1~11">
       <VITAL>
         <NAME>
           最优化方法[02]
@@ -285,8 +285,8 @@
           DEFAULT
         </TYPE>
       </VITAL>
-    </CLASS>
-    <CLASS NUM_DAY="5" NUM_CLASS="1~2" NUM_WEEK="1~8">
+    </LESSON>
+    <LESSON NUM_DAY="5" NUM_CLASS="1~2" NUM_WEEK="1~8">
       <VITAL>
         <NAME>
           网络与通信[01]
@@ -298,8 +298,8 @@
           DEFAULT
         </TYPE>
       </VITAL>
-    </CLASS>
-    <CLASS NUM_DAY="5" NUM_CLASS="3~5" NUM_WEEK="1~8">
+    </LESSON>
+    <LESSON NUM_DAY="5" NUM_CLASS="3~5" NUM_WEEK="1~8">
       <VITAL>
         <NAME>
           面向对象技术与方法[05]
@@ -311,8 +311,8 @@
           DEFAULT
         </TYPE>
       </VITAL>
-    </CLASS>
-    <CLASS NUM_DAY="5" NUM_CLASS="8~9" NUM_WEEK="1~14">
+    </LESSON>
+    <LESSON NUM_DAY="5" NUM_CLASS="8~9" NUM_WEEK="1~14">
       <VITAL>
         <NAME>
           数字逻辑[02]
@@ -324,8 +324,8 @@
           DEFAULT
         </TYPE>
       </VITAL>
-    </CLASS>
-    <CLASS NUM_DAY="5" NUM_CLASS="11~13" NUM_WEEK="9~16">
+    </LESSON>
+    <LESSON NUM_DAY="5" NUM_CLASS="11~13" NUM_WEEK="9~16">
       <VITAL>
         <NAME>
           数值计算方法[01]
@@ -337,6 +337,6 @@
           DEFAULT
         </TYPE>
       </VITAL>
-    </CLASS>
+    </LESSON>
   </BODY>
 </STUAT>
