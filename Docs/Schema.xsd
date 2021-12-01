@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="STUAT" type="STUATTYPE"/>
+
+    <xs:complexType name="STUATTYPE">
+      <xs:sequence maxOccurs="1">
+        <xs:element name="HEAD" type="HEADTYPE"/>
+        <xs:element name="BODY" type="BODYTYPE"/>
+      </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="HEADTYPE">
+        <xs:sequence maxOccurs="1">
+            <xs:element name="NUM_DAY" type="NUM_DAYTYPE"/>
+            <xs:element name="NUM_CLASS" type="NUM_CLASSTYPE"/>
+            <xs:element name="EXTRA" type="EXTRATYPE"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="BODYTYPE">
+        <xs:sequence maxOccurs="1">
+            <xs:element name="LESSON" type="LESSONTYPE"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="NUM_DAYTYPE">
+        <xs:sequence maxOccurs="1">
+            <xs:element name="NUM_DAY_WORKDAY" type="xs:decimal" maxOccurs="1" default="5"/>
+            <xs:element name="NUM_DAY_WEEKEND" type="xs:decimal" maxOccurs="1" default="2"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="NUM_CLASSTYPE">
+        <xs:sequence maxOccurs="1">
+            <xs:element name="NUM_CLASS_MORN" type="xs:decimal" maxOccurs="1" default="5"/>
+            <xs:element name="NUM_CLASS_NOON" type="xs:decimal" maxOccurs="1" default="5"/>
+            <xs:element name="NUM_CLASS_DUSK" type="xs:decimal" maxOccurs="1" default="3"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="EXTRATYPE">
+        <xs:sequence maxOccurs="1">
+            <xs:element name="UNIVERSITY" type="xs:string" default="北京化工大学昌平校区"/>
+            <xs:element name="COLLEGE" type="xs:string" default="DEFAULT"/>
+            <xs:element name="MAJOR" type="xs:string" default="DEFAULT"/>
+            <xs:element name="CLASS" type="xs:string" default="DEFAULT"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="LESSONTYPE">
+        <xs:sequence>
+            <xs:element name="NAME" type="xs:string"/>
+            <xs:element name="LOCATION" type="xs:string"/>
+            <xs:element name="TYPE" type="TYPEType" default="必修"/>
+            <xs:element name="TEACHER" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="TYPEType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="必修"/>
+            <xs:enumeration value="选修"/>
+            <xs:enumeration value="水课"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>
