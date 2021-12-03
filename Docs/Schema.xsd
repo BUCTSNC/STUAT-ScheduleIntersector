@@ -67,6 +67,7 @@
             <xs:element name="LOCATION" type="xs:string"/>
             <xs:element name="TYPE" type="TYPEType" default="必修"/>
             <xs:element name="TEACHER" type="xs:string"/>
+            <xs:element name="OTHER" type="xs:string" default="WAITING FOR ADDITION"/>
         </xs:sequence>
     </xs:complexType>
 
