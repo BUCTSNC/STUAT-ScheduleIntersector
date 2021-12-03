@@ -87,7 +87,7 @@
     </xs:simpleType>
 
     <xs:simpleType name="TYPEType">
-        <xs:restriction base="xs:string">
+        <xs:restriction base="xs:normalizedString">
             <xs:enumeration value="必修"/>
             <xs:enumeration value="选修"/>
             <xs:enumeration value="水课"/>
