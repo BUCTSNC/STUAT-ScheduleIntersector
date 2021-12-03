@@ -14,6 +14,7 @@
         <xs:sequence maxOccurs="1">
             <xs:element name="NUM_DAY" type="NUM_DAYTYPE"/>
             <xs:element name="NUM_CLASS" type="NUM_CLASSTYPE"/>
+            <xs:element name="STUDENT" type="STUDENTTYPE"/> 
             <xs:element name="EXTRA" type="EXTRATYPE"/>
         </xs:sequence>
     </xs:complexType>
@@ -39,8 +40,16 @@
         </xs:sequence>
     </xs:complexType>
 
+    <xs:complexType name="STUDENTTYPE">
+        <xs:sequence>
+            <xs:element name="SYUDENT_NAME" type="xs:string"/>
+            <xs:element name="SYUDENT_ID" type="xs:decimal"/>
+        </xs:sequence>
+    </xs:complexType>
+
     <xs:complexType name="EXTRATYPE">
         <xs:sequence maxOccurs="1">
+            <!--学校名称-->
             <xs:element name="UNIVERSITY" type="xs:string" default="北京化工大学昌平校区"/>
             <xs:element name="COLLEGE" type="xs:string" default="DEFAULT"/>
             <xs:element name="MAJOR" type="xs:string" default="DEFAULT"/>
@@ -50,12 +59,31 @@
 
     <xs:complexType name="LESSONTYPE">
         <xs:sequence>
+            <!--课程名称-->
             <xs:element name="NAME" type="xs:string"/>
+            <xs:element name="WHATDAY" type="WHATDAYTYPE"/>
+            <xs:element name="WEEK_LIST" type="WEEK_LISTTYPE"/>
+            <xs:element name="CLASS_LIST" type="CLASS_LISTTYPE"/>
             <xs:element name="LOCATION" type="xs:string"/>
             <xs:element name="TYPE" type="TYPEType" default="必修"/>
             <xs:element name="TEACHER" type="xs:string"/>
         </xs:sequence>
     </xs:complexType>
+
+    <xs:simpleType name="WHATDAYTYPE">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="7"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="WEEK_LISTTYPE">
+        <xs:list itemType="xs:decimal"/>
+    </xs:simpleType>
+
+    <xs:simpleType name="CLASS_LISTTYPE">
+        <xs:list itemType="xs:decimal"/>
+    </xs:simpleType>
 
     <xs:simpleType name="TYPEType">
         <xs:restriction base="xs:string">
