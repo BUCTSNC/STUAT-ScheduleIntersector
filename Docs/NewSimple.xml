@@ -3,71 +3,35 @@
 <STUAT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Schema.xsd">
   <HEAD>
     <NUM_DAY>
-      <NUM_DAY_WORKDAY>
-        5
-      </NUM_DAY_WORKDAY>
-      <NUM_DAY_WEEKEND>
-        2
-      </NUM_DAY_WEEKEND>
+      <NUM_DAY_WORKDAY>5</NUM_DAY_WORKDAY>
+      <NUM_DAY_WEEKEND>2</NUM_DAY_WEEKEND>
     </NUM_DAY>
     <NUM_CLASS>
-      <NUM_CLASS_MORN>
-        5
-      </NUM_CLASS_MORN>
-      <NUM_CLASS_NOON>
-        5
-      </NUM_CLASS_NOON>
-      <NUM_CLASS_DUSK>
-        3
-      </NUM_CLASS_DUSK>
+      <NUM_CLASS_MORN>5</NUM_CLASS_MORN>
+      <NUM_CLASS_NOON>5</NUM_CLASS_NOON>
+      <NUM_CLASS_DUSK>3</NUM_CLASS_DUSK>
     </NUM_CLASS>
     <STUDENT>
-      <SYUDENT_NAME>
-        小张
-      </SYUDENT_NAME>
-      <SYUDENT_ID>
-        2020000001
-      </SYUDENT_ID>
+      <SYUDENT_NAME>小张</SYUDENT_NAME>
+      <SYUDENT_ID>2020000001</SYUDENT_ID>
     </STUDENT>
     <EXTRA>
-      <UNIVERSITY>
-        NAME
-      </UNIVERSITY>
-      <COLLEGE>
-        COLLEGE
-      </COLLEGE>
-      <MAJOR>
-        MAJOR
-      </MAJOR>
-      <CLASS>
-        0001
-      </CLASS>
+      <UNIVERSITY>NAME</UNIVERSITY>
+      <COLLEGE>COLLEGE</COLLEGE>
+      <MAJOR>MAJOR</MAJOR>
+      <CLASS>0001</CLASS>
     </EXTRA>
   </HEAD>
   <BODY>
     <LESSON>
-      <NAME>
-        CLASS_NAME
-      </NAME>
-      <WHATDAY>
-        1
-      </WHATDAY>
-      <WEEK_LIST>
-        1 2 3 5 6 7 8 9 10 11 12 13 14 15 16 18 22
-      </WEEK_LIST>
-      <CLASS_LIST>
-        4 5 6
-      </CLASS_LIST>
-      <LOCATION>
-        CLASS_LOCATION
-      </LOCATION>
+      <NAME>CLASS_NAME</NAME>
+      <WHATDAY>1</WHATDAY>
+      <WEEK_LIST>1 2 3 5 6 7 8 9 10 11 12 13 14 15 16 18 22</WEEK_LIST>
+      <CLASS_LIST>4 5 6</CLASS_LIST>
+      <LOCATION>CLASS_LOCATION</LOCATION>
       <TYPE>必修</TYPE>
-      <TEACHER>
-        CLASS_TEACHER
-      </TEACHER>
-      <OTHER>
-        WAITING FOR ADDITION
-      </OTHER>
+      <TEACHER>CLASS_TEACHER</TEACHER>
+      <OTHER>WAITING FOR ADDITION</OTHER>
     </LESSON>
   </BODY>
 </STUAT>
