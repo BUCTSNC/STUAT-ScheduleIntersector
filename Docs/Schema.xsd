@@ -54,6 +54,7 @@
             <xs:element name="COLLEGE" type="xs:string" default="DEFAULT"/>
             <xs:element name="MAJOR" type="xs:string" default="DEFAULT"/>
             <xs:element name="CLASS" type="xs:string" default="DEFAULT"/>
+            <xs:element name="TAG" type="xs:string" default="DEFAULT"/>
         </xs:sequence>
     </xs:complexType>
 
