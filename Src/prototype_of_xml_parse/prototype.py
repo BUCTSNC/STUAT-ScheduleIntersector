@@ -1,4 +1,4 @@
-#课表测试.py
+#prototype.py
 #STUAT
 #
 #Created by wuliiiii on 2021/11/3
