@@ -7,5 +7,11 @@ schedule.cursor().execute('''CREATE TABLE HEAD
 
 schedule.cursor().execute('''CREATE TABLE BODY
     (   ID          INT     PRIMARY KEY     NOT NULL,
-        LESSON_NAME TEXT                    NOT NULL,
-''')
+        LESSON_NAME TEXT                    NOT NULL, 
+        WHATDAY     INT                     NOT NULL,
+        WEEK_LIST   TEXT                    NOT NULL,
+        CLASS_LIST  TEXT                    NOT NULL,
+        LOCATION    TEXT                    NOT NULL,
+        TYPE        TEXT                    NOT NULL,
+        TEACHER     TEXT                    NOT NULL,
+        OTHER       TEXT;''')
