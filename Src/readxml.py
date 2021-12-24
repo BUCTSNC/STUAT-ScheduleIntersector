@@ -32,6 +32,7 @@ class Schedule(object):
                 COLLEGE = kebiao.xpath('HEAD/EXTRA/COLLEGE/text()')[0]
                 MAJOR = kebiao.xpath('HEAD/EXTRA/MAJOR/text()')[0]
                 CLASS = kebiao.xpath('HEAD/EXTRA/CLASS/text()')[0]
+                TAG = kebiao.xpath('HEAD/EXTRA/TAG/text()')
                 LESSON = kebiao.xpath('BODY/LESSON/NAME/text()')
                 self.kebiao = kebiao
                 self.WORKDAY = WORKDAY
@@ -45,6 +46,7 @@ class Schedule(object):
                 self.COLLEGE = COLLEGE
                 self.MAJOR = MAJOR
                 self.CLASS = CLASS
+                self.TAG = TAG
                 self.LESSON = LESSON
             else:
                 print("姓名与XML核对出错，请检查XML文件" + XML_url + STUDENT_NAME)
@@ -69,6 +71,9 @@ class Schedule(object):
 
     def studentclass(self):
         return self.CLASS
+
+    def studenttag(self):
+        return self.TAG
 
     def workday(self):
         return self.WORKDAY
