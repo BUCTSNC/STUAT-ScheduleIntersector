@@ -20,7 +20,7 @@
     </xs:complexType>
 
     <xs:complexType name="BODYTYPE">
-        <xs:sequence maxOccurs="1">
+        <xs:sequence maxOccurs="unbounded">
             <xs:element name="LESSON" type="LESSONTYPE"/>
         </xs:sequence>
     </xs:complexType>

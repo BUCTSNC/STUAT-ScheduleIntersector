@@ -90,23 +90,41 @@ class Schedule(object):
     def duskclass(self):
         return self.DUSKCLASS
 
-    def lesson(self):
-        print('请输入一个课程名')
-        print(self.LESSON)
-        the_Lesson = input()
-        if the_Lesson in self.LESSON:
-            whatday = self.kebiao.xpath("BODY/LESSON[NAME='%s']//WHATDAY/text()"%(the_Lesson))[0]
-            weeklist = self.kebiao.xpath("BODY/LESSON[NAME='%s']//WEEK_LIST/text()"%(the_Lesson))[0]
-            classlist = self.kebiao.xpath("BODY/LESSON[NAME='%s']//CLASS_LIST/text()"%(the_Lesson))[0]
-            location = self.kebiao.xpath("BODY/LESSON[NAME='%s']//LOCATION/text()"%(the_Lesson))[0]
-            teacher = self.kebiao.xpath("BODY/LESSON[NAME='%s']//TEACHER/text()"%(the_Lesson))[0]
-            type = self.kebiao.xpath("BODY/LESSON[NAME='%s']//TYPE/text()"%(the_Lesson))[0]
-            other = self.kebiao.xpath("BODY/LESSON[NAME='%s']//OTHER/text()"%(the_Lesson))[0]
-            print(weeklist)
+    def lesson_num(self):
+        return len(self.LESSON)
+
+    def lesson(self,num,element):
+        # 调试用
+        # print('请输入一个课程名')
+        # print(self.LESSON)
+        # the_Lesson = input()
+        the_Lesson = self.LESSON[num]
+        WHATDAY = self.kebiao.xpath("BODY/LESSON[NAME='%s']//WHATDAY/text()" % (the_Lesson))[0]
+        WEEKLIST = self.kebiao.xpath("BODY/LESSON[NAME='%s']//WEEK_LIST/text()" % (the_Lesson))[0]
+        CLASSLIST = self.kebiao.xpath("BODY/LESSON[NAME='%s']//CLASS_LIST/text()" % (the_Lesson))[0]
+        LOCATION = self.kebiao.xpath("BODY/LESSON[NAME='%s']//LOCATION/text()" % (the_Lesson))[0]
+        TEACHER = self.kebiao.xpath("BODY/LESSON[NAME='%s']//TEACHER/text()" % (the_Lesson))[0]
+        TYPE = self.kebiao.xpath("BODY/LESSON[NAME='%s']//TYPE/text()" % (the_Lesson))[0]
+        OTHER = self.kebiao.xpath("BODY/LESSON[NAME='%s']//OTHER/text()" % (the_Lesson))[0]
+        # print(weeklist)
+        if element == 'WHATADAY':
+            return WHATDAY
+        elif element == 'WEEKLIST':
+            return WEEKLIST
+        elif element == 'CLASSLIST':
+            return CLASSLIST
+        elif element == 'LOCATION':
+            return LOCATION
+        elif element == 'TEACHER':
+            return TEACHER
+        elif element == 'TYPE':
+            return TYPE
+        elif element == 'OTHER':
+            return OTHER
         else:
             print('未查到课程' + the_Lesson)
 
 
 if __name__ == '__main__':
     xz = Schedule(Name='小张', XML_url='../Docs/NewSimple.xml')
-    print(xz.lesson())
+    print(xz.lesson(0,'WEEKLIST'))
