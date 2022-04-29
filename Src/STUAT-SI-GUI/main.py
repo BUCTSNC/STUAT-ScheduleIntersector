@@ -44,4 +44,3 @@ class Ui_Dialog(object):
         self.label.setText(_translate("Dialog", "城市"))
         self.queryBtn.setText(_translate("Dialog", "查询"))
         self.clearBtn.setText(_translate("Dialog", "清空"))
-

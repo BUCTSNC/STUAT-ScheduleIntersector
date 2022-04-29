@@ -17,13 +17,13 @@ import xlsxwriter
 
 # 找到当前目录下的全部PDF文件
 def find_pdf_files():
-    pdfpath_list = glob.glob(r'*课表.pdf')
+    pdfpath_list = glob.glob(r"*课表.pdf")
     return pdfpath_list
 
 
 # 查询某个人的excle课表
 def find_ones_xlsx():
-    xlsx_list = glob.glob((str(find_pdf_files()[count])[:-4]) + r'*.xlsx')
+    xlsx_list = glob.glob((str(find_pdf_files()[count])[:-4]) + r"*.xlsx")
     return xlsx_list
 
 
@@ -35,7 +35,7 @@ def file_name_analysis(file_path):
 
     pages_dict = {}
     for f_path, f_name in file_path.items():
-        regex = r'_(\d+)+'
+        regex = r"_(\d+)+"
         re_result = re.findall(regex, f_name)
         if re_result:
             pages_dict[f_path] = re_result
@@ -56,10 +56,10 @@ def is_file_or_dir(path):
         if os.path.isdir(path):
             # root, dirs, files = os.walk(path)
             for files in os.listdir(path):
-                if os.path.splitext(files)[1] == '.pdf':
+                if os.path.splitext(files)[1] == ".pdf":
                     files_path_dict[path + files] = files
         else:
-            if os.path.splitext(path)[1] == '.pdf':
+            if os.path.splitext(path)[1] == ".pdf":
                 files_path_dict[path] = os.path.split(path)[1]
 
     return files_path_dict
@@ -90,7 +90,15 @@ def load_pdf(page_dict):
             str_key = str(t.page) + "页第" + str(t.order) + "张表"
             data_dict[str_key] = data
             # 输出为excel
-            t.to_excel(str(find_pdf_files()[count])[:-4] + "第" + str(t.page) + "页第" + str(t.order) + "张表" + '.xlsx')
+            t.to_excel(
+                str(find_pdf_files()[count])[:-4]
+                + "第"
+                + str(t.page)
+                + "页第"
+                + str(t.order)
+                + "张表"
+                + ".xlsx"
+            )
             # 输出为csv
             # t.to_csv(str(t.page) + "页第" + str(t.order) + "张表" + '.cvs')
             # 输出为html
@@ -107,7 +115,9 @@ def load_pdf(page_dict):
             sheet_name.append(sheetname.name)
 
         # 定义一个目标excel
-        endxls = xlsxwriter.Workbook(str(find_pdf_files()[count])[:-4] + '.xlsx')
+        endxls = xlsxwriter.Workbook(
+            str(find_pdf_files()[count])[:-4] + ".xlsx"
+        )
 
         all_sheet_value = []
 
@@ -115,7 +125,9 @@ def load_pdf(page_dict):
         for sheet_num in range(0, first_file_sheet_num):
             all_sheet_value.append([])
             for file_name in find_ones_xlsx():
-                print("正在读取" + file_name + "的第" + str(sheet_num + 1) + "个标签...")
+                print(
+                    "正在读取" + file_name + "的第" + str(sheet_num + 1) + "个标签..."
+                )
                 file_value = get_file_value(file_name, sheet_num)
                 all_sheet_value[sheet_num].append(file_value)
 
@@ -173,5 +185,5 @@ if __name__ == "__main__":
         pdf_data = load_pdf(page_dict)
         # print(find_ones_xlsx())
         count = count + 1
-for file in glob.glob(r'*张表.xlsx'):
+for file in glob.glob(r"*张表.xlsx"):
     os.remove(file)
